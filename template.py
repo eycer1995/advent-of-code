@@ -1,6 +1,7 @@
+from aocd import get_data
 import time
-day_input = "2023/inputs/d.txt"
-data = open(day_input, "r").read().split("\n")
+
+data = get_data(day=1, year=2024)
 
 
 def main():
