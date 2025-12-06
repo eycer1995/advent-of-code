@@ -1,37 +1,11 @@
+from aocd import get_data
 import time
 
-
-class Wire():
-    def __init__(self, name, value):
-        self.name = name
-        self.value = value
-
-
-def get_data():
-    lines = []
-    with open("./2015/inputs/d7.txt", "r") as f:
-        x = f.readline()
-        while(x):
-            lines.append(x)
-            x = f.readline()
-        return [(['',''] + l.replace('\n','').split(' '))[-5:] for l in lines]
-
-
-
-def process_data(operation):
-    count = 0
-    for i in range(count):
-        print(operation)
-
-
-
+data = get_data(day=7, year=2015)
 
 
 def main():
-    data = get_data()
-    for i in range(len(data)):
-        # print(data[i])
-        process_data(data[i]) 
+    print(data)
 
 
 if __name__ == "__main__":

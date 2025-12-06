@@ -1,4 +1,4 @@
-data = open('./2015/d1.txt', 'r').read()
+data = open('./2015/inputs/d1.txt', 'r').read()
 result = 0
 flag = 0
 bfloor = 0

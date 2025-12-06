@@ -1,7 +1,7 @@
 from aocd import get_data
 import time
 
-data = get_data(day=1, year=2024)
+data = get_data(day=1, year=2025)
 
 
 def main():
@@ -14,6 +14,3 @@ if __name__ == "__main__":
     t2 = time.perf_counter()
     print("Finished")
     print(f"Elapsed time: {t2 - t1:0.2f}s")
-
-
-
